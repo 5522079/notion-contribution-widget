@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calendar-container {
+    text-align: center;
+}
+
+.calendar {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.day {
+    text-align: center;
+    border-radius: 5px;
+    padding: 14px;
+}
