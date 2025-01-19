@@ -13,7 +13,6 @@ days = soup.find_all("td", {"class": "ContributionCalendar-day"})
 contributions = []
 for day in days:
     date = day.get("data-date")
-    level = day.get("data-level")
     
     tooltip = day.find_next("tool-tip")
     if tooltip:

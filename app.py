@@ -33,18 +33,10 @@ def index():
     # 曜日
     if today.weekday() == 0:
         dow = 5
-    elif today.weekday() == 1:
-        dow = 4
-    elif today.weekday() == 2:
-        dow = 3
-    elif today.weekday() == 3:
-        dow = 2
-    elif today.weekday() == 4:
-        dow = 1
-    elif today.weekday() == 5:
-        dow = 0
     elif today.weekday() == 6:
         dow = 6
+    else:
+        dow = 5 % today.weekday()
     size = 49 # 7の倍数
     contributions, _ = load_csv(file_path)
     
