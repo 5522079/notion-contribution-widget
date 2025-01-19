@@ -1,0 +1,2 @@
+# notion-contrib-widget
+GitHubのContributionをNotionのウィジェットとして表示できる
