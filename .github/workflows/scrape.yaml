@@ -28,7 +28,6 @@ jobs:
 
       - name: Run robot script
         run: |
-          cd module
           python robot.py
 
       - name: Commit files
