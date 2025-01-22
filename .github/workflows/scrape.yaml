@@ -2,7 +2,7 @@ name: scrape
 
 on:
   workflow_dispatch:
-  schedule:
+  #schedule:
     # JST: 0, 6, 12, 18 -> UTC: 15, 21, 3, 9
     #- cron: "0 15 * * *"
     #- cron: "0 21 * * *"
