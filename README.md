@@ -3,7 +3,7 @@
 ![img_1](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F3828517%2Fa61704d4-8dce-dafe-5296-4504242bfaab.png?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&s=67a95e2de5e99ea43087a95f6f590bed)
 
 ## 概要
-このプログラムはGitHubのコントリビューション状況をNotion上で確認できるツールです。
+このプログラムはGitHubのコントリビューショングラフをNotion上で確認できるツールです。
 
 ## 機能
 ### 1.  GitHubのコントリビューション数を取得
