@@ -30,13 +30,7 @@ def get_color(count):
 @app.route('/')
 def index():
     today = datetime.now()
-    # 曜日
-    if today.weekday() == 0:
-        dow = 5
-    elif today.weekday() == 6:
-        dow = 6
-    else:
-        dow = 5 % today.weekday()
+    dow = (6 if today.weekday() == 6 else 5 - today.weekday()) # 曜日
     size = 49 # 7の倍数
     contributions, _ = load_csv(file_path)
     
