@@ -1,9 +1,13 @@
+import os
 import csv
+
 import requests
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 
 
-user_name = '5522079'
+load_dotenv()
+user_name = os.getenv('GITHUB_USER_NAME')
 url = "https://github.com/users/" + user_name + "/contributions"
 
 response = requests.get(url)
