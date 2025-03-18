@@ -29,6 +29,8 @@ jobs:
       - name: Run robot script
         run: |
           python robot.py
+        env:
+          TOKEN: ${{ secrets.USER_NAME }}
 
       - name: Commit files
         run: |
