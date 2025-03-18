@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ## 使い方
 `.env`ファイルを作成し、GitHubユーザーネームを設定します。
 ```env
-GITHUB_USER_NAME=your_github_user_name
+USER_NAME=your_github_user_name
 ```
 
 以下のコマンドを実行します。
