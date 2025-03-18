@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from datetime import datetime, timedelta
 
+
 app = Flask(__name__)
 
 file_path = "./data/contributions.csv"
@@ -31,7 +32,7 @@ def get_color(count):
 def index():
     today = datetime.now()
     dow = (6 if today.weekday() == 6 else 5 - today.weekday()) # 曜日
-    size = 49 # 7の倍数
+    size = 49 # サイズ設定（7の倍数）
     contributions, _ = load_csv(file_path)
     
     # カレンダー
