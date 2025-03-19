@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 user_name = os.getenv('USER_NAME')
-url = "https://github.com/users/" + user_name + "/contributions"
+url = "https://github.com/users/" + str(user_name) + "/contributions"
 
 response = requests.get(url)
 soup = BeautifulSoup(response.content, "html.parser")
