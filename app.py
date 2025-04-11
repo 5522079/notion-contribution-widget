@@ -10,12 +10,12 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 load_dotenv()
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+TOKEN = os.getenv('TOKEN')
 GITHUB_GRAPHQL_URL = "https://api.github.com/graphql"
 
 def load_contributions(username):
     headers = {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Authorization": f"Bearer {TOKEN}",
         "Content-Type": "application/json"
     }
     
