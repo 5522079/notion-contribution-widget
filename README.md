@@ -11,8 +11,10 @@
     <img src="https://img.shields.io/badge/-Python-F9DC3E.svg?logo=python&style=flat">
     <img src="https://img.shields.io/badge/-CSS3-1572B6.svg?logo=css3&style=flat">
     <img src="https://img.shields.io/badge/-HTML5-333.svg?logo=html5&style=flat">
-    <img src="https://img.shields.io/badge/-Github%20Actions-181717.svg?logo=github&style=popout">
-    <img src="https://img.shields.io/badge/-Azure%20Web%20Apps-0078D7.svg?logo=azure&style=popout">
+    <img src="https://img.shields.io/badge/-Github-181717.svg?logo=github&style=popout">
+    <img src="https://img.shields.io/badge/GraphQL-ff379b?style=flat&logo=graphql">
+    <img src="https://img.shields.io/badge/-Azure-2560E0.svg?logo=azure-pipelines&style=popout">
+    <img src="https://img.shields.io/badge/Azure%20Web%20App-blue?style=flat">
 </p>
 
 ## 動作環境
@@ -20,55 +22,23 @@
 | --------------------- | ---------- |
 | Python                | 3.12       |
 | flask                 | 3.1.0      |
-| beautifulsoup4        | 4.12.3     |
 | requests              | 2.24.0     |
 
-その他のパッケージのバージョンは requirements.txt を参照してください。
-
-## ディレクトリ構成
-```txt
-./
-├─ .github/
-│   ├─ main_notion-contribution-widget.yml
-│   └─ scrape.yml
-├─ data/
-│   └─ contributions.csv
-├─ static/
-│   └─ style.css
-├─ templates/
-│   └─ index.html
-├─ .env
-├─ .gitignore
-├─ app.py
-├─ robot.py
-├─ requirements.txt
-└─ README.md
-```
-
-## インストール
-```bash
-# リポジトリをクローン
-git clone https://github.com/5522079/notion-contribution-widget.git
-
-# ディレクトリに移動
-cd notion-contribution-widget
-
-# 仮想環境の作成
-python -m venv .venv
-.venv\Scripts\activate # Windows
-
-# ライブラリのインストール
-pip install -r requirements.txt
-```
+その他のパッケージのバージョンは [requirements.txt](./requirements.txtrequirements.txt) を参照してください。
 
 ## 使い方
-`.env`ファイルを作成し、GitHubユーザーネームを設定します。
-```env
-USER_NAME=your_github_user_name
-```
+1. アプリケーションのURLにアクセス
+    
+    以下のURLにアクセスします。<br>
+    https://notion-contribution-widget.azurewebsites.net/
 
-以下のコマンドを実行します。
-```bash
-python app.py
-```
-http://127.0.0.1:8000 にアクセスできたら成功です。
+2. GitHubユーザー名を指定
+    
+    URLのクエリパラメータにusernameを指定して、自分のGitHubアカウント名を入力します。<br>
+    例：https://notion-contribution-widget.azurewebsites.net/?username=your_github_username
+
+3. Notionに埋め込む
+
+    Notionのページに移動し、「埋め込み」ブロックを追加します。アプリケーションのURLを入力して埋め込みます。
+    
+    ![Image](https://github.com/user-attachments/assets/c0d1757f-f20c-42b3-ab1e-af8a72b66255)
