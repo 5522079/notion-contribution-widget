@@ -7,16 +7,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="calendar-container">
-        <div class="calendar">
-            {% for column in calendar %}
-                <div class="column">
-                    {% for day in column %}
-                        <div class="day" style="background-color: {{ day.color }}">  </div>
-                    {% endfor %}
-                </div>
-            {% endfor %}
-        </div>
+    <div class="container">
+        <p class="error-message">{{ error_message }}</p>
     </div>
     <a href="https://github.com/5522079/notion-contribution-widget" class="github-link" target="_blank">GitHub</a>
 </body>
