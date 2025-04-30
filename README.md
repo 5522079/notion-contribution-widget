@@ -1,6 +1,6 @@
 # Contribution Graph Widget for Notion
 
-![img_1](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F3828517%2Fa61704d4-8dce-dafe-5296-4504242bfaab.png?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&s=67a95e2de5e99ea43087a95f6f590bed)
+![img_top](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F3828517%2Fa61704d4-8dce-dafe-5296-4504242bfaab.png?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&s=67a95e2de5e99ea43087a95f6f590bed)
 
 ## 概要
 
@@ -41,4 +41,9 @@
 
     Notionのページに移動し、「埋め込み」ブロックを追加します。アプリケーションのURLを入力して埋め込みます。
     
-    ![Image](https://github.com/user-attachments/assets/c0d1757f-f20c-42b3-ab1e-af8a72b66255)
+    ![img_embed](https://github.com/user-attachments/assets/c0d1757f-f20c-42b3-ab1e-af8a72b66255)
+
+4. カスタマイズする
+   
+   `background_color`や`color_shceme`などを指定することで自分好みにカスタマイズすることができます。詳しくはNotionの[デモページ](https://www.notion.so/DemoPage-1814e6035cdd8060b088d3d8c19ffc95?pvs=4)をご覧ください。
+   ![img_custom](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F3828517%2F81c6ab70-c74b-4194-81b1-f07904391843.png?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8bf070bbec7d4f5a01d0e46757f94e5e)
