@@ -153,7 +153,7 @@ def index():
         count = contributions.get(date_str, 0)
         calendar_data.append({
             "day": day.day,
-            "color": get_color(count, max_count)
+            "color": get_color(count, max_count, color_scheme=color_scheme, background_color=background_color)
         })
 
     show_data = [[] for _ in range(len(calendar_data) // 7 + 1)]
