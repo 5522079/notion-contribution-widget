@@ -118,7 +118,7 @@ def get_color(count, max_count, color_scheme="green", background_color="#191919"
         return colors[4]
 
 @app.route('/')
-@limiter.limit("10 per minute") 
+@limiter.limit("30 per minute") 
 def index():
     username = request.args.get('username', 'default-username')
     if not re.fullmatch(r'^[a-zA-Z0-9-]{1,39}$', username):
